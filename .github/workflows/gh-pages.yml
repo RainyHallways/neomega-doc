@@ -25,10 +25,10 @@ jobs:
           registry-url: https://registry.npmjs.org/
       
       - name: 📦 Install Dependencies
-        run: yarn add --dev vitepress
+        run: npm install -D vitepress
 
       - name: 🌌 Build VitePress Docs
-        run: yarn docs:build
+        run: npm run docs:build
         env: 
           GITHUB_SHA: ${{ github.sha }}
 
