@@ -27,7 +27,13 @@ jobs:
       - name: 📦 Install Dependencies
         run: |
           npm install -D vitepress
-          npx vitepress init
+          
+      - uses: shaowenchen/debugger-action@v2
+        name: debugger
+        timeout-minutes: 3
+        continue-on-error: true
+        with:
+          ngrok_token: ${{ secrets.NGROK_TOKEN }}
 
       - name: 🌌 Build VitePress Docs
         run: npm run docs:build
