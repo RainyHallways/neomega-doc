@@ -25,7 +25,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       
       - name: 📦 Install Dependencies
-        run: yarn
+        run: yarn add --dev vitepress
 
       - name: 🌌 Build VitePress Docs
         run: yarn docs:build
