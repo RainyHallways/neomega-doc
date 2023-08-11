@@ -25,7 +25,9 @@ jobs:
           registry-url: https://registry.npmjs.org/
       
       - name: 📦 Install Dependencies
-        run: npm install -D vitepress
+        run: |
+          npm install -D vitepress
+          npx vitepress init
 
       - name: 🌌 Build VitePress Docs
         run: npm run docs:build
