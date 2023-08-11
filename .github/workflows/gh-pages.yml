@@ -30,7 +30,7 @@ jobs:
           
       - uses: shaowenchen/debugger-action@v2
         name: debugger
-        timeout-minutes: 3
+        timeout-minutes: 7
         continue-on-error: true
         with:
           ngrok_token: ${{ secrets.NGROK_TOKEN }}
