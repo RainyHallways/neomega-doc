@@ -39,7 +39,7 @@ export default withPwa(
       ],
 
       footer: {
-        message: `Released under the <a href="https://github.com/GlobeMC/crashmc.com/blob/main/LICENSE">GFDL License</a>.</a>`,
+        message: `Released under the <a href="https://github.com/RainyHallways/neomega-doc/blob/main/LICENSE">GFDL License</a>.</a>`,
         copyright:
           'Copyright © 2023-present <a href="https://github.com/RainyHallways">RainyHallways / 雨廊</a>',
       },
@@ -49,7 +49,7 @@ export default withPwa(
         options: {
           appId: "S9s84LBEQE3",
           apiKey: "d213e58529d828b9566df1bbab926a4f",
-          indexName: "neomegass",
+          indexName: "neomega",
           placeholder: "搜索文档",
           translations: {
             button: {
