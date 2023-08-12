@@ -23,7 +23,7 @@ features:
     details: 您无需再次下载 PhoenixBuilder ,仅需下载并运行 neomega 即可
   - icon: ⚡️
     title: 功能比 legacy-omega 更强大
-    details: 集成了 lua 解析器,能够做到自定义插件功能,且支持热重载功能
+    details: 集成了 lua 解析器,能够做到自定义插件功能,且不断开与服务器的连接就能重载插件
   - icon: 🛠️
     title: 高度开放的自定义
     details: 你可以做到 legacy-omega 做不到的对 QQ机器人 功能/权限的自定义
