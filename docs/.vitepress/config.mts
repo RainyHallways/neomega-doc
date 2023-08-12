@@ -49,7 +49,7 @@ export default withPwa(
       search: {
         provider: "algolia",
         options: {
-          appId: "S9s84LBEQE3",
+          appId: "S984LBEQE3",
           apiKey: "d213e58529d828b9566df1bbab926a4f",
           indexName: "neomega",
           placeholder: "搜索文档",
