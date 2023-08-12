@@ -12,6 +12,11 @@ export default withPwa(
     lang: "zh-CN",
     lastUpdated: true,
     description: "新一代omega框架",
+    head: [
+      [
+        'link',{ rel: 'icon', href: '/favicon.ico' }
+      ]
+    ],
     themeConfig: {
       lastUpdated: {
         text: "最后更新",
