@@ -20,6 +20,7 @@ export default withPwa(
       //logo: "/logo-brand.png",
       nav: [
         { text: "主页", link: "/" },
+        { text: "简介", link: "/guide/" },
         {
           text: "文档",
           activeMatch: "/docs/*",
@@ -94,10 +95,10 @@ export default withPwa(
       },
 
       sidebar: [
+        { text: "简介", link: "/guide/" },
         {
           text: "文档",
           items: [
-            { text: "WIP", link: "#" },
             {
               text: "Docdraw",
               items: [
@@ -110,6 +111,7 @@ export default withPwa(
           text: "贡献",
           items: [
             { text: "贡献指南", link: "/contribute/contributing" },
+            { text: "报错提交", link: "/contribute/crash-report" },
           ],
         },
         { text: "关于本项目", link: "/about" },

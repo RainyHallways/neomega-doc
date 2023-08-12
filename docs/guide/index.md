@@ -3,6 +3,10 @@ contributors: []
 ---
 # 简介
 
+:::warning
+开发者并没有义务回复您的问题, 您应该具备基本的提问技巧。
+:::
+
 ## neomega
 
 提供了与 `Minecraft` 相关的工具、概念抽象和 `API` 并集成了 `lua引擎` 的新一代 omega 框架, 并在 legacy-omega 的基础上做了部分修改和拓展。
