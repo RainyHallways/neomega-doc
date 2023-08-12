@@ -31,7 +31,7 @@ export default withPwa(
           text: "贡献",
           activeMatch: "/contribute/*",
           items: [
-            { text: "贡献指南", link: "/contribute/contributing" },
+            { text: "报错提交", link: "/contribute/crash-report" },
           ],
         },
         { text: "关于本项目", link: "/about" },
@@ -41,7 +41,7 @@ export default withPwa(
       footer: {
         message: `Released under the <a href="https://github.com/RainyHallways/neomega-doc/blob/main/LICENSE">GFDL License</a>.</a>`,
         copyright:
-          'Copyright © 2023-present <a href="https://github.com/RainyHallways">RainyHallways / 雨廊</a>',
+          'Copyright © 2023 present by <a href="https://github.com/RainyHallways">RainyHallways / 雨廊</a>',
       },
 
       search: {
