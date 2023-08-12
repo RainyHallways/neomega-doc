@@ -2,7 +2,7 @@ import Theme from "vitepress/theme"
 import { h } from "vue"
 import Comment from "./components/Comment.vue"
 import Contributors from "./components/Contributors.vue"
-import LauncherBadge from "./components/LauncherBadge.vue"
+import Badge from "./components/Badge.vue"
 import ReloadPrompt from "./components/ReloadPrompt.vue"
 import "./style.css"
 
@@ -17,6 +17,6 @@ export default {
     })
   },
   enhanceApp(ctx) {
-    ctx.app.component("LauncherBadge", LauncherBadge)
+    ctx.app.component("Badge", Badge)
   },
 }
