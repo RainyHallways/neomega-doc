@@ -6,35 +6,20 @@ export const pwa: Partial<VitePWAOptions> = {
   includeManifestIcons: false,
   manifest: {
     id: "/",
-    name: "CrashMC 文档",
-    short_name: "CrashMC 文档",
-    description: "为一般玩家编写的 Minecraft 崩溃分析指南",
+    name: "neomega 文档",
+    short_name: "neomega 文档",
+    description: "为高技术玩家编写的 neomega 开发文档",
     theme_color: "#ffffff",
     start_url: "/",
     lang: "zh-CN",
     display: "standalone",
-    categories: ["minecraft", "crash"],
+    categories: ["neomega"],
     icons: [
       {
-        src: "logo-new.png",
-        sizes: "1024x1024",
+        src: "cat.png",
+        sizes: "400x400",
         type: "image/png",
-      },
-      {
-        src: "pwa-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
-      },
-      {
-        src: "pwa-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        src: "pwa-64x64.png",
-        sizes: "64x64",
-        type: "image/png",
-      },
+      }
     ],
   },
   workbox: {
