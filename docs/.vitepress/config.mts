@@ -100,7 +100,7 @@ export default withPwa(
         //{ text: "捐赠", link: "#" }
       ],
 
-      socialLinks: [{ icon: "github", link: "https://github.com/RainyHallways" }],
+      socialLinks: [{ icon: "github", link: "https://github.com/RainyHallways/neomega-doc" }],
 
       editLink: {
         pattern: "https://github.com/RainyHallways/neomega-doc/edit/main/docs/:path",
