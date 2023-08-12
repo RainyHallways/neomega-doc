@@ -28,12 +28,12 @@ jobs:
         run: |
           npm install -D vitepress
           
-  #    - uses: shaowenchen/debugger-action@v2
-   #     name: debugger
-  #      timeout-minutes: 
-   #     continue-on-error: true
-  #      with:
-  #        ngrok_token: ${{ secrets.NGROK_TOKEN }}
+#      - uses: shaowenchen/debugger-action@v2
+#        name: debugger
+#        timeout-minutes: 
+#        continue-on-error: true
+#        with:
+#          ngrok_token: ${{ secrets.NGROK_TOKEN }}
 
       - name: 🌌 Build VitePress Docs
         run: npm run docs:build
