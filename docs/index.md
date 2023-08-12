@@ -7,8 +7,8 @@ hero:
   text: 新一代omega框架
   tagline: 给你带来全新体验
   image:
-#    src: /logo-new.png
-    alt: Vite
+    src: /cat.png
+    alt: cat
   actions:
     - theme: brand
       text: 了解更多

@@ -17,7 +17,7 @@ export default withPwa(
         text: "最后更新",
       },
       outlineTitle: "目录",
-      //logo: "/logo-brand.png",
+      logo: "/logo-brand.png",
       nav: [
         { text: "主页", link: "/" },
         { text: "简介", link: "/guide/" },
