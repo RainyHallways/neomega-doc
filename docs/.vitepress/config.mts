@@ -25,7 +25,7 @@ export default withPwa(
           text: "文档",
           activeMatch: "/docs/*",
           items: [
-            { text: "WIP", link: "#" },
+            { text: "WIP", link: "/docs/" },
           ],
         },
         {
@@ -75,10 +75,11 @@ export default withPwa(
         {
           text: "文档",
           items: [
+            { text: "WIP", link: "/docs/" },
             {
-              text: "Docdraw",
+              text: "WIP",
               items: [
-                { text: "WIP", link: "#" },
+                { text: "WIP", link: "/docs/wip/" },
               ],
             }
           ],
