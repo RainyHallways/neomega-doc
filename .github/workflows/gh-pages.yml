@@ -47,4 +47,4 @@ jobs:
           publish_dir: ./docs/.vitepress/dist
           force_orphan: true
           publish_branch: gh-pages
-          cname: rainyhallways.github.io
+          cname: www.neomega.top
