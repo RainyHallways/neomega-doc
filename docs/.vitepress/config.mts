@@ -31,6 +31,7 @@ export default withPwa(
           text: "贡献",
           activeMatch: "/contribute/*",
           items: [
+            { text: "贡献指南", link: "/contribute/contributing" },
             { text: "报错提交", link: "/contribute/crash-report" },
           ],
         },
