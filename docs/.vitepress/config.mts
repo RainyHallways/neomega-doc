@@ -43,7 +43,7 @@ export default withPwa(
       footer: {
         message: `Released under the <a href="https://github.com/RainyHallways/neomega-doc/blob/main/LICENSE">GFDL License</a>.</a>`,
         copyright:
-          'Copyright © 2023 present by <a href="https://github.com/RainyHallways">RainyHallways / 雨廊</a>',
+          'Copyright © 2023 <a href="https://github.com/RainyHallways">RainyHallways/雨廊</a>,All Rights Reserved.',
       },
 
       search: {
