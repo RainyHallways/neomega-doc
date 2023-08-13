@@ -14,8 +14,8 @@ hero:
       text: 了解更多
       link: /guide/
     - theme: alt
-      text: 发行版下载
-      link: #
+      text: 抢先体验
+      link: https://www.bilibili.com/video/BV1GJ411x7h7
 
 features:
   - icon: 💡
