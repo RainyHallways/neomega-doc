@@ -14,8 +14,8 @@ hero:
       text: 了解更多
       link: /guide/
     - theme: alt
-      text: 抢先体验
-      link: https://www.bilibili.com/video/BV1GJ411x7h7
+      text: 下载器下载
+      link: https://github.com/RainyHallways/neomega-downloader/releases/tag/v1.0.0
 
 features:
   - icon: 💡
