@@ -30,7 +30,7 @@ export default withPwa(
           text: "文档",
           activeMatch: "/docs/*",
           items: [
-            { text: "WIP", link: "/docs/" },
+            { text: "从legacy-omega迁移至neomega", link: "/docs/legacy2neo" },
           ],
         },
         {
@@ -80,11 +80,11 @@ export default withPwa(
         {
           text: "文档",
           items: [
-            { text: "WIP", link: "/docs/" },
+            { text: "从legacy-omega迁移至neomega", link: "/docs/legacy2neo" },
             {
               text: "WIP",
               items: [
-                { text: "WIP", link: "/docs/wip/" },
+                { text: "WIP", link: "/docs/" },
               ],
             }
           ],
