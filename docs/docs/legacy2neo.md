@@ -123,7 +123,23 @@ omega 根存储数位档案文件夹为: neomega_storage
 ```
 
 :::warning 注意
-legacy-omega 的配置文件与 neomega 的配置文件并不兼容，故你需要重新进行配置，默认配置文件目录为 ./neomega_storage/config/
+legacy-omega 的 Built-In组件 配置文件与 neomega 的配置文件兼容，故你无需重新进行配置(Bulit-In)，将配置文件复制到目录 ./neomega_storage/config/Built-In 即可 lua组件 请自行配置
+
+注:以下组件并不包含在 neomega 内
+
+指令发送
+
+性能分析
+
+数据库导入导出
+
+第三方_by_xxx的所有(除去 第三方_by温柔_地皮组件 和 第三方_by温柔_优化版本雪球菜单组件)
+
+菜单显示
+
+OP权限自检
+
+lua插件支持
 
 go-cqhttp 的 config.yml device.json 与 session.token 可以进行迁移
 :::
