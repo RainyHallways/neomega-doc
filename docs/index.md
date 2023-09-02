@@ -15,7 +15,7 @@ hero:
       link: /guide/
     - theme: alt
       text: 下载
-      link: /docs/doenload
+      link: /docs/download
 
 features:
   - title: 高度自由
