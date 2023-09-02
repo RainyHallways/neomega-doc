@@ -1,8 +1,5 @@
 # 从legacy-omega迁移至neomega
-## neomega 的下载
-1.使用 2401PT 提供的启动器  
-2.使用 RainyHallways 提供的 [neomega下载器](https://github.com/RainyHallways/neomega-downloader/releases/tag/v1.0.0)    
-3.手动下载使用
+
 ## 迁移使用
 以下为 neomega 初次使用的配置流程 以commit(345):03a275e为例
 ```txt
@@ -127,19 +124,7 @@ legacy-omega 的 Built-In组件 配置文件与 neomega 的配置文件兼容，
 
 注:以下组件并不包含在 neomega 内
 
-指令发送
-
-性能分析
-
-数据库导入导出
-
-第三方_by_xxx的所有(除去 第三方_by温柔_地皮组件 和 第三方_by温柔_优化版本雪球菜单组件)
-
-菜单显示
-
-OP权限自检
-
-lua插件支持
+指令发送、性能分析、数据库导入导出、第三方_by_xxx的所有(除去 第三方_by温柔_地皮组件 和 第三方_by温柔_优化版本雪球菜单组件)、菜单显示、OP权限自检、lua插件支持
 
 go-cqhttp 的 config.yml device.json 与 session.token 可以进行迁移
 :::

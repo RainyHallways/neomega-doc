@@ -30,6 +30,7 @@ export default withPwa(
           text: "文档",
           activeMatch: "/docs/*",
           items: [
+            { text: "下载neomega", link: "/docs/download" },
             { text: "从legacy-omega迁移至neomega", link: "/docs/legacy2neo" },
           ],
         },
@@ -80,11 +81,11 @@ export default withPwa(
         {
           text: "文档",
           items: [
-            { text: "从legacy-omega迁移至neomega", link: "/docs/legacy2neo" },
             {
-              text: "WIP",
+              text: "从零开始的neomega基础使用教程",
               items: [
-                { text: "WIP", link: "/docs/" },
+                { text: "下载neomega", link: "/docs/download" },
+                { text: "从legacy-omega迁移至neomega", link: "/docs/legacy2neo" },
               ],
             }
           ],

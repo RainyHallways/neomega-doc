@@ -18,6 +18,18 @@ const members = [
     links: [{ icon: "github", link: "https://github.com/awaqwqa" }],
   },
   {
+    avatar: "https://cdn.crashmc.com/https://github.com/LNSSPsd.png",
+    name: "Ruphane",
+    title: "主要开发者",
+    links: [{ icon: "github", link: "https://github.com/LNSSPsd" }],
+  },
+  {
+    avatar: "https://cdn.crashmc.com/https://github.com/kukinghan.png",
+    name: "kukinghan",
+    title: "开发者",
+    links: [{ icon: "github", link: "https://github.com/kukinghan" }],
+  },
+  {
     avatar: "https://cdn.crashmc.com/https://github.com/RainyHallways.png",
     name: "RainyHallways",
     title: "开发者",
@@ -28,12 +40,6 @@ const members = [
     name: "Happy2018new",
     title: "开发者",
     links: [{ icon: "github", link: "https://github.com/Happy2018new" }],
-  },
-  {
-    avatar: "https://cdn.crashmc.com/https://github.com/kukinghan.png",
-    name: "kukinghan",
-    title: "文档贡献者",
-    links: [{ icon: "github", link: "https://github.com/kukinghan" }],
   },
 ]
 

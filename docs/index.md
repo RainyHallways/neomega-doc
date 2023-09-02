@@ -14,8 +14,8 @@ hero:
       text: 了解更多
       link: /guide/
     - theme: alt
-      text: 下载器下载
-      link: https://github.com/RainyHallways/neomega-downloader/releases/tag/v1.0.0
+      text: 下载
+      link: /docs/doenload
 
 features:
   - title: 高度自由
