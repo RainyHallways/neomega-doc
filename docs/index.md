@@ -22,7 +22,7 @@ features:
     icon: 😺
     details: 为克服omega可配置/自定义能力弱的问题，neomega深度支持了lua，用户可以完全自由的修改和配置neomega核心功能和lua插件 
   - title: 可靠性与高交互能力 
-    icon: 🪄
+    icon: 🔏
     details: neomega，可以通过游戏菜单，lua，监听器，高级方块交互api，实现玩家自助的，不同命令块生成，机器人可以根据玩家需要，检查玩家权限
   - title: 与qq的更多交互
     icon: 🔌
