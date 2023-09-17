@@ -1,5 +1,5 @@
 {
-    "index_name": "neomega",
+    "index_name": "doc",
     "start_urls": ["https://www.neomega.top/"],
     "rateLimit": 8,
     "maxDepth": 10,
