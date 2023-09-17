@@ -35,6 +35,11 @@ export default withPwa(
           ],
         },
         {
+          text: "Q&A",
+          activeMatch: "/QA/*",
+          link: "/QA/",
+        },
+        {
           text: "贡献",
           activeMatch: "/contribute/*",
           items: [
@@ -88,6 +93,17 @@ export default withPwa(
                 { text: "从legacy-omega迁移至neomega", link: "/docs/legacy2neo" },
               ],
             }
+          ],
+        },
+        {
+          text: "Q&A",
+          items: [
+            { text: "FastBuilder常见问题", link: "/QA/FastBuilder常见问题" },
+            { text: "neomega必知必会", link: "/QA/neomega必知必会" },
+            { text: "neomega常见问题", link: "/QA/neomega常见问题" },
+            { text: "插件常见问题", link: "/QA/插件常见问题" },
+            { text: "面板常见问题", link: "/QA/面板常见问题" },
+            { text: "其它常见问题", link: "/QA/其它常见问题" },
           ],
         },
         {
