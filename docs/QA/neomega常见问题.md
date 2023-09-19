@@ -12,6 +12,6 @@ neomega使用了付费软件FastBuilder提供的网络能力。你为FastBuilder
 
 ## omega导入器没有权限？
 **问**：omega导入器没有权限？使用omega导入器报错？<br/>
-**答**：omega导入器没是一个独立项目，并不属于NeOmega项目。<br/>
+**答**：omega导入器是一个独立项目，并不属于neomega项目。<br/>
 导入器项目是2401花费了非常非常非常多时间和精力开发的软件<br/>
 **不对普通用户开放授权**
