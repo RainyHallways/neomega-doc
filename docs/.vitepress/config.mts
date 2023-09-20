@@ -25,7 +25,7 @@ export default withPwa(
       logo: "/logo-brand.png",
       nav: [
         { text: "主页", link: "/" },
-        { text: "简介", link: "/guide/" },
+        //{ text: "简介", link: "/guide/" },
         {
           text: "文档",
           activeMatch: "/docs/*",
@@ -47,9 +47,9 @@ export default withPwa(
             { text: "报错提交", link: "/contribute/crash-report" },
           ],
         },
-        { text: "关于本项目", link: "/about" },
-        { text: "小工具2.0", link: "/chksenswd" },
-        //{ text: "捐赠", link: "#" }
+        { text: "小工具", link: "/tools/" },
+        { text: "关于", link: "/about" },
+        { text: "捐赠", link: "https://afdian.net/a/fbdoc" }
       ],
 
       footer: {
@@ -139,6 +139,7 @@ export default withPwa(
           ],
         },
         { text: "关于本项目", link: "/about" },
+        { text: "小工具集锦", link: "/tools/" },
         //{ text: "捐赠", link: "#" }
       ],
 

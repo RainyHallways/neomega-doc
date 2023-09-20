@@ -3,7 +3,7 @@ contributors: []
 ---
 
 <script setup>
-import Analyzer from './.vitepress/theme/components/chksenswd.vue'
+import Analyzer from '../.vitepress/theme/components/chksenswd.vue'
 </script>
 
 # 敏感词分析工具
