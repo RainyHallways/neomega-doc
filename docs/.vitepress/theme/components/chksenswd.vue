@@ -21,8 +21,7 @@
     <div v-else class="no-match">当前语句中不包含违禁词</div>
     </div>
   </div>
-  <input type="checkbox" id="checkbox" v-model="agree" /><label for="checkbox">本人同意不恶意使用此工具</label>
-  <div v-if="agree"><input type="checkbox" id="checkbox" v-model="showregex" /><label for="checkbox">显示 Regex</label></div>
+  <div class="container"><input type="checkbox" id="checkbox" v-model="agree" /><label for="checkbox">本人同意不恶意使用此工具</label></div>
 </template>
 
 <script>
@@ -35,14 +34,10 @@ export default {
     isLoading: false,
     fullRegex: null,
     agree: false,
-    showregex: false,
   };
   },
   methods: {
   async checkSensitive() {
-    if (this.showregex) {
-      alert("请您注意: Regex可能会包含一些违反社会良俗的内容");  
-    }
     this.isLoading = true;
     if (this.agree) {
       this.result = await this.checkSensitiveWord(this.userInput);  
@@ -85,6 +80,7 @@ export default {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
+  display: block;
   font-family: Arial, sans-serif;
 }
 
