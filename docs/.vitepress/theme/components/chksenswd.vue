@@ -118,7 +118,6 @@ input[type="text"] {
 .result {
   margin-top: 20px;
   padding: 10px;
-  background-color: #9499ff;
   border: 1px solid #646cff;
   color: #646bff;
   border-radius: 4px;
