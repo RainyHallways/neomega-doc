@@ -13,10 +13,10 @@
       <span class="label">匹配结果:</span>
       <span class="value">{{ result[1] }}</span>
       </div>
-      <div v-if="showregex" class="result-item">
+      <!--div v-if="showregex" class="result-item">
       <span class="label">Regex: </span>
       <span class="value">{{ result[2] }}</span>
-      </div>
+      </div-->
     </div>
     <div v-else class="no-match">当前语句中不包含违禁词</div>
     </div>
@@ -118,8 +118,9 @@ input[type="text"] {
 .result {
   margin-top: 20px;
   padding: 10px;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
+  background-color: #9499ff;
+  border: 1px solid #646cff;
+  color: #646bff;
   border-radius: 4px;
 }
 
