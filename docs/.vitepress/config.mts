@@ -48,6 +48,7 @@ export default withPwa(
           ],
         },
         { text: "关于本项目", link: "/about" },
+        { text: "小工具2.0", link: "/chksenswd" },
         //{ text: "捐赠", link: "#" }
       ],
 
