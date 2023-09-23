@@ -27,7 +27,6 @@ jobs:
       - name: 📦 Install Dependencies
         run: |
           npm install -D vitepress
-          npm install -D vitepress-demo-editor
           
 #      - uses: shaowenchen/debugger-action@v2
 #        name: debugger
