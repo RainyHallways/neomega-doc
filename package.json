@@ -15,7 +15,7 @@
     "prettier": "^3.0.1",
     "tslib": "^2.6.1",
     "vite-plugin-pwa": "^0.16.5",
-    "vitepress": "^1.0.0-rc.15",
+    "vitepress": ">=0.1.0",
     "vitepress-demo-editor": "^3.2.1",
     "vitepress-plugin-comment-with-giscus": "^1.1.7",
     "vue": "^3.3.4",
