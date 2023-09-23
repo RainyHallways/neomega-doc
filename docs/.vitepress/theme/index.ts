@@ -22,11 +22,6 @@ export default {
     ctx.app.component("Badge", Badge)
   },
   enhanceApp({ app }) {
-    app.use(vuePlugin, {
-      defaultDirection: "row",
-      ms: 30,
-      handleError(errs) {},
-      onMonacoCreated(monaco) {},
-    }),
+    app.use(vuePlugin, {defaultDirection: "row",ms: 30,handleError(errs) {},onMonacoCreated(monaco) {}}),
   },
 }
