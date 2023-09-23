@@ -1,7 +1,5 @@
 import Theme from "vitepress/theme"
 import { h } from "vue"
-import { vuePlugin } from "vitepress-demo-editor"
-import "vitepress-demo-editor/dist/style.css"
 import Comment from "./components/Comment.vue"
 import Contributors from "./components/Contributors.vue"
 import Badge from "./components/Badge.vue"
@@ -18,11 +16,7 @@ export default {
       "layout-bottom": () => h(ReloadPrompt),
     })
   },
-//  enhanceApp(ctx) {
-//    ctx.app.component("Badge", Badge)
-//  },
-  enhanceApp({ app }) {
-    app.use(vuePlugin, {defaultDirection: "row",ms: 30,handleError(errs) {},onMonacoCreated(monaco) {},}),
+  enhanceApp(ctx) {
     ctx.app.component("Badge", Badge)
   },
 }
