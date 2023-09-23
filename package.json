@@ -6,7 +6,7 @@
     "docs:format": "prettier --write ."
   },
   "name": "neomega",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Documentation for neomega.",
   "main": "index.js",
   "devDependencies": {
@@ -16,6 +16,7 @@
     "tslib": "^2.6.1",
     "vite-plugin-pwa": "^0.16.4",
     "vitepress": "^1.0.0-beta.7",
+    "vitepress-demo-editor": "^3.2.1",
     "vitepress-plugin-comment-with-giscus": "^1.1.7",
     "vue": "^3.3.4",
     "workbox-window": "^7.0.0"
