@@ -18,10 +18,11 @@ export default {
       "layout-bottom": () => h(ReloadPrompt),
     })
   },
-  enhanceApp(ctx) {
-    ctx.app.component("Badge", Badge)
-  },
+//  enhanceApp(ctx) {
+//    ctx.app.component("Badge", Badge)
+//  },
   enhanceApp({ app }) {
     app.use(vuePlugin, {defaultDirection: "row",ms: 30,handleError(errs) {},onMonacoCreated(monaco) {},}),
+    ctx.app.component("Badge", Badge)
   },
 }
