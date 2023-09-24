@@ -23,10 +23,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
-      
-      - name: 📦 Install Dependencies
-        run: |
-          npm install -D
           
 #      - uses: shaowenchen/debugger-action@v2
 #        name: debugger
@@ -35,8 +31,11 @@ jobs:
 #        with:
 #          ngrok_token: ${{ secrets.NGROK_TOKEN }}
 
+      - name: 📦 Install Dependencies
+        run: yarn
+
       - name: 🌌 Build VitePress Docs
-        run: npm run docs:build
+        run: yarn docs:build
         env: 
           GITHUB_SHA: ${{ github.sha }}
 
