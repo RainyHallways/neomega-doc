@@ -5,6 +5,9 @@ import Contributors from "./components/Contributors.vue"
 import Badge from "./components/Badge.vue"
 import ReloadPrompt from "./components/ReloadPrompt.vue"
 import "./style.css"
+import Documate from '@documate/vue'
+import '@documate/vue/dist/style.css'
+
 
 export default {
   ...Theme,
@@ -14,6 +17,9 @@ export default {
       "doc-after": () => h(Comment),
       "doc-footer-before": () => h(Contributors),
       "layout-bottom": () => h(ReloadPrompt),
+      'nav-bar-content-before': () => h(Documate, {
+        endpoint: 'https://z4tymshtgq.us.aircode.run/ask',
+      }),
     })
   },
   enhanceApp(ctx) {

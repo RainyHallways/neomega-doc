@@ -5,6 +5,7 @@ import { pwa } from "./scripts/pwa"
 
 const COMMIT_ID = process.env.CF_PAGES_COMMIT_SHA || process.env.COMMIT_REF
 const commitRef = COMMIT_ID?.slice(0, 8)
+const environment = process.env.DEPLOYMENT_STATUS || process.env.NODE_ENV
 
 export default withPwa(
   defineConfig({
@@ -53,7 +54,7 @@ export default withPwa(
       ],
 
       footer: {
-        message: `Released under the <a href="https://github.com/RainyHallways/neomega-doc/blob/main/LICENSE">GFDL License</a>.</a>`,
+        message: `${environment}@<a href="https://github.com/RainyHallways/neomega-doc/commit/${commitRef}" target="_blank" alt=${commitRef}>${commitRef}</a><br />Released under the <a href="https://github.com/RainyHallways/neomega-doc/blob/main/LICENSE">GFDL License</a>.</a>`,
         copyright:
           'Copyright © 2023 <a href="https://github.com/RainyHallways">RainyHallways/雨廊</a>,All Rights Reserved.',
       },
@@ -140,7 +141,7 @@ export default withPwa(
         },
         { text: "关于本项目", link: "/about" },
         { text: "小工具集锦", link: "/tools/" },
-        //{ text: "捐赠", link: "#" }
+        { text: "捐赠", link: "#" }
       ],
 
       socialLinks: [{ icon: "github", link: "https://github.com/RainyHallways/neomega-doc" }],
