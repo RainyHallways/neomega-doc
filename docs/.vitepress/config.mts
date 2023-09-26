@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress"
 import { pwa } from "./scripts/pwa"
 
 const COMMIT_ID =
-  process.env.CF_PAGES_COMMIT_SHA || process.env.COMMIT_REF || "local"
+  process.env.CF_PAGES_COMMIT_SHA || process.env.COMMIT_REF || process.env.GITHUB_SHA || "local"
 const commitRef = COMMIT_ID?.slice(0, 8)
 const environment = process.env.DEPLOYMENT_STATUS || process.env.NODE_ENV
 
