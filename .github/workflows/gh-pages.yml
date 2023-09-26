@@ -32,10 +32,10 @@ jobs:
 #          ngrok_token: ${{ secrets.NGROK_TOKEN }}
 
       - name: 📦 Install Dependencies
-        run: yarn
+        run: npm install -D
 
       - name: 🌌 Build VitePress Docs
-        run: yarn docs:build
+        run: npm run docs:build
         env: 
           GITHUB_SHA: ${{ github.sha }}
 
