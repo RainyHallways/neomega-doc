@@ -40,8 +40,3 @@ features:
 title: neomega
 titleTemplate: Next Generation of Omega Frameworks
 ---
-
-<script setup lang="ts">
-import notice from './.vitepress/theme/components/notice.vue'
-</script>
-<notice />

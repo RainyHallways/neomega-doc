@@ -20,8 +20,7 @@
     "vitepress-plugin-comment-with-giscus": "^1.1.7",
     "vue": "^3.3.4",
     "workbox-window": "^7.0.0",
-    "@documate/documate": "^0.2.0",
-    "vue-amazing-ui": "^0.1.16"
+    "@documate/documate": "^0.2.0"
   },
   "keywords": [
     "neomega",
@@ -32,7 +31,6 @@
   "dependencies": {
     "directory-tree": "^3.5.1",
     "jszip": "^3.10.1",
-    "@documate/vue": "^0.2.3",
-    "vue-amazing-ui": "^0.1.16"
+    "@documate/vue": "^0.2.3"
   }
 }
