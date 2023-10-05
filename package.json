@@ -11,15 +11,23 @@
   "description": "Documentation for neomega.",
   "main": "index.js",
   "devDependencies": {
+    "@andatoshiki/vitepress-plugin-nprogress": "^0.0.1",
     "@giscus/vue": "^2.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@vite-pwa/vitepress": "^0.2.0",
-    "prettier": "^3.0.1",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier-vue": "^4.2.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "prettier": "^3.0.2",
+    "sass": "^1.68.0",
+    "vitepress": "1.0.0-rc.20",
+    "vue": "^3.3.4",
+    "vue-eslint-parser": "^9.3.1",
+    "workbox-window": "^7.0.0",
     "tslib": "^2.6.1",
     "vite-plugin-pwa": "^0.16.5",
-    "vitepress": "^1.0.0-rc.5",
     "vitepress-plugin-comment-with-giscus": "^1.1.7",
-    "vue": "^3.3.4",
-    "workbox-window": "^7.0.0",
     "@documate/documate": "^0.2.0"
   },
   "keywords": [
@@ -30,7 +38,17 @@
   "license": "GFDL",
   "dependencies": {
     "directory-tree": "^3.5.1",
-    "jszip": "^3.10.1",
-    "@documate/vue": "^0.2.3"
+    "@documate/vue": "^0.2.3",
+    "@gera2ld/tarjs": "^0.2.2",
+    "@types/umami": "^0.1.2",
+    "@typescript-eslint/parser": "^6.7.3",
+    "axios": "^1.4.0",
+    "pako": "^2.1.0",
+    "typescript": "^5.1.6",
+    "viewerjs": "^1.11.6",
+    "vitepress-plugin-back-to-top": "^1.0.1",
+    "vitepress-plugin-codeblocks-fold": "^1.2.27",
+    "vitepress-plugin-comment-with-giscus": "^1.1.7",
+    "vitepress-plugin-image-viewer": "^1.1.2"
   }
 }
