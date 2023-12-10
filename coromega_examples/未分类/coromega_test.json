@@ -1,0 +1,10 @@
+{
+    "名称": "coromega_test.lua",
+    "描述": "测试coromega的部分关键 api",
+    "是否禁用": true,
+    "来源": "LuaLoader",
+    "配置": {
+        "Version": "1.0.0",
+        "Author": "2401PT"
+    }
+}
