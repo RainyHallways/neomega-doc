@@ -24,12 +24,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
           
-      - uses: shaowenchen/debugger-action@v2
-        name: debugger
-        timeout-minutes: 20
-        continue-on-error: true
-        with:
-          ngrok_token: ${{ secrets.NGROK_TOKEN }}
+      #- uses: shaowenchen/debugger-action@v2
+      #  name: debugger
+      #  timeout-minutes: 20
+      #  continue-on-error: true
+      #  with:
+      #    ngrok_token: ${{ secrets.NGROK_TOKEN }}
 
       - name: 📦 Install Dependencies
         run: yarn
