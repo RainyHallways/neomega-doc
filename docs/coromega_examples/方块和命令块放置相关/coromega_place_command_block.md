@@ -30,10 +30,10 @@ description: 方块和命令块示例
         - block_name: 方块的名字
         - block_data: 方块的状态
         - option: 命令方块的配置
-    - 返回: 无
+    - 返回: 错误信息
     ``` lua
     -- 在884.73.829位置放置一个重复命令方块,命令为list @a 10tick后执行,并且需要红石激活 条件为真 名字为:列出所有玩家 延迟为10 tick 输出结果 并且在第一次tick时执行
-    coromega:place_command_block( 
+    local err = coromega:place_command_block( 
         { x = 884, y = 73, z = 829 },       -- 坐标
         "repeating_command_block",          -- command_block/chain_command_block/repeating_command_block
         0,                                  -- 方块数据，影响朝向
@@ -47,6 +47,31 @@ description: 方块和命令块示例
             execute_on_first_tick = true,   -- 执行第一个对象
         } 
     )
+    if err then
+        coromega:print(err)
+    end 
+    ```
+
+- place_sign(pos, block_name, text, lighting)
+    - 范围: 任意
+    - 说明: 在pos位置放置一个告示牌
+    - 参数: 
+        - pos: 放置的位置
+        - block_name: 方块的名字
+        - text: 告示牌上的字
+        - lighting: 是否发光
+    - 返回: 错误信息
+    ``` lua
+    -- 在 1,-60,0 位置放置一个告示牌，上面写着 240! 同时发光
+    local err = coromega:place_sign(
+        { x = 1, y = -60, z = 0 }, -- 坐标
+        "jungle_standing_sign 0",
+        "§a§l240!",
+        true
+    )
+    if err then
+        coromega:print(err)
+    end
     ```
 
 ## 区块构建 API

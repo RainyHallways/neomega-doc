@@ -213,21 +213,27 @@ description: 命令示例
     local result = player:check({ "m=c", "tag=!ban", "tag=!ban" })
     local result = player:check({ "m=c"})
     ```
--- uuid_string()
+
+### 获取玩家 uuid
+- uuid_string()
     - 范围:协程内
     - 说明:获取玩家的uuid字符串
     - 参数:无
-    - 返回值:uuid字符串
+    - 返回值:uuid字符串,是否获得该信息
     ``` lua
     local uuid = player:uuid_string()
+    local uuid,found = player:uuid_string()
     ```
--- name()
+
+### 获取玩家名字
+- name()
     - 范围:协程内
     - 说明:获取玩家的名字
     - 参数:无
-    - 返回值:玩家名
+    - 返回值:玩家名,是否获得该信息
     ``` lua
     local name = player:name()
+    local name,found = player:name()
     ```
 	
 ### 获取玩家id
@@ -235,9 +241,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的实体唯一id
     - 参数:无
-    - 返回值:实体唯一id
+    - 返回值:实体唯一id,是否获得该信息
     ``` lua
     local id = player:entity_unique_id()
+    local id,found = player:entity_unique_id()
     ```
 	
 ### 获取玩家登录时间
@@ -245,9 +252,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的登录时间(unix time)， 其类型与 :now() 一致，单位秒
     - 参数:无
-    - 返回值:登录时间
+    - 返回值:登录时间,是否获得该信息
     ``` lua
     local time = player:login_time()
+    local time,found = player:login_time()
     ```
 	
 ### 获取玩家平台聊天id
@@ -255,9 +263,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的平台聊天id
     - 参数:无
-    - 返回值:平台聊天id
+    - 返回值:平台聊天id,是否获得该信息
     ``` lua
     local id = player:platform_chat_id()
+    local id,found = player:platform_chat_id()
     ```
 	
 ### 获取玩家皮肤id
@@ -265,9 +274,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的皮肤id
     - 参数:无
-    - 返回值:皮肤id
+    - 返回值:皮肤id,是否获得该信息
     ``` lua
     local id = player:skin_id()
+    local id,found = player:skin_id()
     ```
 	
 ### 获取玩家属性标识
@@ -275,9 +285,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的属性标识
     - 参数:无
-    - 返回值:属性标识
+    - 返回值:属性标识,是否获得该信息
     ``` lua
     local flag = player:properties_flag()
+    local flag,found = player:properties_flag()
     ```
 	
 ### 获取玩家命令权限等级
@@ -285,9 +296,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的命令权限等级
     - 参数:无
-    - 返回值:命令权限等级
+    - 返回值:命令权限等级,是否获得该信息
     ``` lua
     local level = player:command_permission_level()
+    local level,found = player:command_permission_level()
     ```
 	
 ### 获取玩家动作权限
@@ -295,9 +307,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的动作权限
     - 参数:无
-    - 返回值:动作权限
+    - 返回值:动作权限,是否获得该信息
     ``` lua
     local permissions = player:action_permissions()
+    local permissions,found = player:action_permissions()
     ```
 	
 ### 获取玩家op权限等级
@@ -305,9 +318,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的op权限等级
     - 参数:无
-    - 返回值:op权限等级
+    - 返回值:op权限等级,是否获得该信息
     ``` lua
     local level = player:op_permission_level()
+    local level,found = player:op_permission_level()
     ```
 	
 ### 获取玩家自定义存储权限
@@ -315,9 +329,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的自定义存储权限
     - 参数:无
-    - 返回值:自定义存储权限
+    - 返回值:自定义存储权限,是否获得该信息
     ``` lua
     local permissions = player:custom_stores_permissions()
+    local permissions,found = player:custom_stores_permissions()
     ```
 	
 ### 获取玩家设备id
@@ -355,9 +370,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:获取玩家的冒险和动作能力等级字典
     - 参数:无
-    - 返回值:冒险和动作能力等级字典
+    - 返回值:冒险和动作能力等级字典,是否获得该信息
     ``` lua
     local adventure_ability_map, action_permission_ability_map = player:adventure_and_action_ability_map()
+    local adventure_ability_map, action_permission_ability_map,found = player:adventure_and_action_ability_map()
     ```
 	
 ### 更新玩家的权限等级字典
@@ -377,9 +393,10 @@ description: 命令示例
     - 范围:协程内
     - 说明:判断玩家是否为op
     - 参数:无
-    - 返回值:是否为op
+    - 返回值:是否为op,是否获得该信息
     ``` lua
     local result = player:is_op()
+    local result,found = player:is_op()
     ```
 	
 ### 判断是否在线
