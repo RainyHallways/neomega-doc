@@ -32,8 +32,17 @@ export default withPwa(
           text: "文档",
           activeMatch: "/docs/*",
           items: [
-            { text: "下载neomega", link: "/docs/download" },
+            { text: "下载安装neomega", link: "/docs/download" },
             { text: "从legacy-omega迁移至neomega", link: "/docs/legacy2neo" },
+          ],
+        },
+        {
+          text: "lua组件文档",
+          activeMatch: "/lua/*",
+          items: [
+            { text: "lua插件书写说明", link: "/lua/components/lua插件书写说明.md" },
+            { text: "lua组件/api示例", link: "/lua/examples/index.md" },
+            { text: "luaWeb(HTTP)模块", link: "/lua/modules/web-cn.md" },
           ],
         },
         {
@@ -120,6 +129,14 @@ export default withPwa(
                 { text: "从legacy-omega迁移至neomega", link: "/docs/legacy2neo" },
               ],
             }
+          ],
+        },
+        {
+          text: "lua组件文档",
+          items: [
+            { text: "lua插件书写说明", link: "/lua/components/lua插件书写说明.md" },
+            { text: "lua组件/api示例", link: "/lua/examples/index.md" },
+            { text: "luaWeb(HTTP)模块", link: "/lua/modules/web-cn.md" },
           ],
         },
         {

@@ -1,5 +1,9 @@
 # 从legacy-omega迁移至neomega
 
+:::warning
+此文档已经过时，其中的一些内容可能不适于现今版本的neomega!
+:::
+
 ## 迁移使用
 以下为 neomega 初次使用的配置流程 以commit(345):03a275e为例
 ```txt
