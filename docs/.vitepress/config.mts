@@ -72,8 +72,8 @@ export default withPwa(
       search: {
         provider: "algolia",
         options: {
-          appId: "S984LBEQE3",
-          apiKey: "d213e58529d828b9566df1bbab926a4f",
+          appId: "QSVE4MFKBB",
+          apiKey: "1acb56cb4879fd68a5c28d70ef8ea398",
           indexName: "neomega",
           placeholder: "搜索文档",
           translations: {
