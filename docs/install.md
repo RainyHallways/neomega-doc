@@ -1,8 +1,5 @@
 ---
-lang: zh-CN
-title: 安装指南
-description: 安装指南
-sidebar:  auto
+contributors: []
 ---
 
 # 安装 neomega
@@ -17,12 +14,15 @@ curl -o install.sh https://omega-1259160345.cos.ap-nanjing.myqcloud.com/fastbuil
 再输入 `./fastbuilder` 即可 
  
 ## Windows
-windows 下载这个，双击运行：
-[windows-amd64.exe](https://omega-1259160345.cos.ap-nanjing.myqcloud.com/fastbuilder_launcher/windows-amd64.exe)
+windows 请按照`系统架构`选择版本下载，双击运行：    
+[windows-x64](https://omega-1259160345.cos.ap-nanjing.myqcloud.com/fastbuilder_launcher/windows-amd64.exe)  
+[windows-x86](https://omega-1259160345.cos.ap-nanjing.myqcloud.com/fastbuilder_launcher/windows-x86.exe)    
+[windows-arm64](https://omega-1259160345.cos.ap-nanjing.myqcloud.com/fastbuilder_launcher/windows-arm64.exe)
+
 
 ## Dockerfile 
 ```dockerfile
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 RUN export DEBIAN_FRONTEND=noninteractive && export DEBIAN_FRONTEND=teletype \
     && sed -i 's/archive.ubuntu.com/mirrors.bfsu.edu.cn/g' /etc/apt/sources.list \
     && apt-get update -yq && apt-get install -yq --no-install-recommends \
