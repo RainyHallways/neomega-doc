@@ -7,7 +7,9 @@ import members from "./.vitepress/data/members"
 
 ---
 
-neomega 是一个 2023 年 7 月底由 CMA2401PT 建立的一个基于[PhoenixBuidler](https://github.com/LNSSPsd/PhoenixBuilder)的插件框架
+neomega 是一个 2023 年 7 月底由 CMA2401PT 开发的与 Minecraft 相关的工具、概念抽象和 API。 一个与游戏交互的插件机器人框架。
+
+前身：omega (基于[PhoenixBuidler](https://github.com/LNSSPsd/PhoenixBuilder))
 
 ---
 
