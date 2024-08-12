@@ -43,6 +43,7 @@ export default withPwa(
             { text: "lua插件书写说明", link: "/lua/components/lua插件书写说明.md" },
             { text: "lua组件/api示例", link: "/lua/examples/index.md" },
             { text: "luaWeb(HTTP)模块", link: "/lua/modules/web-cn.md" },
+            { text: "了解更多" , link: "https://lumega.kukinghan.cn/" },
           ],
         },
         {
@@ -132,11 +133,12 @@ export default withPwa(
           ],
         },
         {
-          text: "lua组件文档",
+          text: "lua",
           items: [
             { text: "lua插件书写说明", link: "/lua/components/lua插件书写说明.md" },
             { text: "lua组件/api示例", link: "/lua/examples/index.md" },
             { text: "luaWeb(HTTP)模块", link: "/lua/modules/web-cn.md" },
+            { text: "了解更多" , link: "https://lumega.kukinghan.cn/" },
           ],
         },
         {
