@@ -37,7 +37,7 @@ export default withPwa(
           ],
         },
         {
-          text: "lua组件文档",
+          text: "lua",
           activeMatch: "/lua/*",
           items: [
             { text: "lua插件书写说明", link: "/lua/components/lua插件书写说明.md" },
