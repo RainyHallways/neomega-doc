@@ -99,9 +99,11 @@ export default {
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
+  color: gray;
   border-radius: 4px;
+  background-color: #f9f9f9;
   box-sizing: border-box; /* 防止宽度超过父容器 */
-}
+  }
 
 .btn {
   padding: 10px 20px;
