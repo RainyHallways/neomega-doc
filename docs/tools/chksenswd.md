@@ -9,7 +9,9 @@ import Analyzer from '../.vitepress/theme/components/chksenswd.vue'
 # 敏感词分析工具 2.0
 
 :::tip 提示
-敏感词分析工具目前处于测试阶段，可能不稳定。
+敏感词分析工具目前处于测试阶段，可能不稳定。    
+
+level: 默认使用 0, 少部分表达式会使用此字段    
 
 适用区域数值解释:    
 item_comment: 一般情况下使用此选项    
