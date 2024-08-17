@@ -6,12 +6,17 @@ contributors: []
 import Analyzer from '../.vitepress/theme/components/chksenswd.vue'
 </script>
 
-# 敏感词分析工具
+# 敏感词分析工具 2.0
 
 :::tip 提示
 敏感词分析工具目前处于测试阶段，可能不稳定。
 
-有这么好用的工具不[捐赠](https://afdian.net/a/fbdoc)一下qaq？到时候没有费用维护就没得用了xwx
+适用范围数值解释:    
+item_comment: 一般情况下使用此选项    
+sign_content: 文本来源为 告示牌 时使用此选项    
+check_long_numbers: 文本来源为 书与笔 时使用此选项    
+World, content: 文本来源为 世界频道 时使用此选项    
+HuaYuTing_content: 文本来源为 某网络游戏 时使用此选项
 :::
 
 ---
@@ -21,7 +26,7 @@ import Analyzer from '../.vitepress/theme/components/chksenswd.vue'
 ---
 
 :::warning 隐私声明
-- 所有的分析仅会在本地进行，并不会有信息被上传到云端。
+- 本服务使用了 咕咕 提供的API，介意数据泄露的请仔细斟酌，服务器不会储存您所提交的内容。
 :::
 
 ---
