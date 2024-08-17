@@ -34,8 +34,8 @@ export default {
         'item_comment',
         'sign_content',
         'check_long_numbers',
-        'World, content',
-        'HuaYuTing_content'
+        'World',
+        'HuaYuTing'
       ],
       apiMessage: ''
     };
