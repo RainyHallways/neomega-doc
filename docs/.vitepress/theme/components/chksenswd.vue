@@ -1,139 +1,136 @@
 <template>
   <div class="container">
-  <input v-model="userInput" type="text" placeholder="输入文字">
-  <button @click="checkSensitive" :disabled="isLoading" class="btn">{{ isLoading ? '请等待...' : '提交' }}</button>
-  <div v-if="isLoading" class="loading">正在进行敏感词判断，请稍候...</div>
-  <div v-else>
-    <div v-if="result" class="result">
-      <div class="result-item">
-      <span class="label">违禁词:</span>
-      <span class="value">{{ result[0] }}</span>
+    <form @submit.prevent="submitReview" class="review-form">
+      <div class="form-group">
+        <label for="content" class="text">文本内容:</label>
+        <input type="text" id="content" v-model.trim="reviewData.content" required class="form-control">
       </div>
-      <div v-if="result[1]" class="result-item">
-      <span class="label">匹配结果:</span>
-      <span class="value">{{ result[1] }}</span>
+      <div class="form-group">
+        <label for="channel" class="text">适用区域:</label>
+        <select id="channel" v-model="reviewData.channel" required class="form-control">
+          <option v-for="channel in channels" :key="channel" :value="channel">
+            {{ channel }}
+          </option>
+        </select>
       </div>
-      <!--div v-if="showregex" class="result-item">
-      <span class="label">Regex: </span>
-      <span class="value">{{ result[2] }}</span>
-      </div-->
-    </div>
-    <div v-else class="no-match">当前语句中不包含违禁词</div>
+      <button type="submit" class="btn btn-primary">提交</button>
+    </form>
+    <div v-if="apiMessage" class="api-message" :class="{'success': apiMessage.startsWith('文本不包含敏感词'), 'error': !apiMessage.startsWith('文本不包含敏感词')}">
+      {{ apiMessage }}
     </div>
   </div>
-  <div class="container"><input type="checkbox" id="checkbox" v-model="agree" /><label for="checkbox">本人同意不恶意使用此工具</label></div>
 </template>
 
 <script>
-import nreg from "./new_reg.json";
 export default {
   data() {
-  return {
-    userInput: "",
-    result: null,
-    isLoading: false,
-    fullRegex: null,
-    agree: false,
-  };
+    return {
+      reviewData: {
+        content: '',
+        channel: '',
+        level: '0'
+      },
+      channels: [
+        'item_comment',
+        'sign_content',
+        'check_long_numbers',
+        'World, content',
+        'HuaYuTing_content'
+      ],
+      apiMessage: ''
+    };
   },
   methods: {
-  async checkSensitive() {
-    this.isLoading = true;
-    if (this.agree) {
-      this.result = await this.checkSensitiveWord(this.userInput);  
-    } else { alert("您必须同意协议才能使用"); }
-    this.isLoading = false;
-  },
-  checkSensitiveWord(word) {
-    return new Promise((resolve) => {
-    setTimeout(() => {
-      for (let val in nreg.regex) {
-      for (let n in nreg.regex[val]) {
-        let cur = new RegExp(
-        nreg.regex[val][n]
-          .replace(/\(\?(i|\#\d)\)/g, "")
-          .replace(/^.*?content=/g, "")
-          .replace(/[\u4e00-\u9fa5]/g, (m) =>
-          String.fromCharCode(m.charCodeAt(0) - 1)
-          ),
-        "ig"
-        );
-        let sm = word.match(cur);
-        if (sm) {
-        let replaceRegex = nreg.regex[val][n].replace(/\(\?(i|\#\d)\)/g, "");
-        this.fullRegex = nreg.regex[val][n];
-        resolve([sm,`${val}.${n}`,cur]);
-        return;
+    submitReview() {
+      fetch('https://liliya233.uk/openapi/other/review_text', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(this.reviewData)
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
-      }
-      }
-      resolve(null);
-    }, 2000);
-    });
-  },
-  },
+        return response.json();
+      })
+      .then(data => {
+        this.apiMessage = data.message || 'Submission was successful, but no message was provided.';
+      })
+      .catch(error => {
+        if (error instanceof TypeError) {
+          this.apiMessage = 'Network error: ' + error.message;
+        } else {
+          this.apiMessage = error.message || 'An error occurred while submitting the form.';
+        }
+      });
+    }
+  }
 };
 </script>
 
 <style scoped>
 .container {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  display: block;
-  font-family: Arial, sans-serif;
 }
 
-input[type="text"] {
+.review-form {
+  background: #fbfbfb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
   width: 100%;
   padding: 10px;
-  font-size: 16px;
+  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box; /* 防止宽度超过父容器 */
 }
 
 .btn {
-  display: inline-block;
-  margin: 5px 0;
   padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
   border: none;
   border-radius: 4px;
+  background-color: #007bff;
+  color: white;
   cursor: pointer;
 }
 
-.checkbox {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 16px;
+.btn:hover {
+  background-color: #0056b3;
 }
 
-.loading {
-  margin-top: 10px;
-  color: #888;
-}
-
-.result {
+.api-message {
   margin-top: 20px;
   padding: 10px;
-  border: 1px solid #646cff;
-  color: #646bff;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #f9f9f9;
 }
 
-.result-item {
-  margin-bottom: 10px;
+.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
 }
 
-.label {
-  font-weight: bold;
+.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
 }
 
-.no-match {
-  margin-top: 20px;
-  color: #888;
-  text-align: center;
+.text{
+  color: gray;
 }
 </style>
