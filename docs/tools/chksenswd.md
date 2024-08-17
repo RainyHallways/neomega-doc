@@ -11,12 +11,12 @@ import Analyzer from '../.vitepress/theme/components/chksenswd.vue'
 :::tip 提示
 敏感词分析工具目前处于测试阶段，可能不稳定。
 
-适用范围数值解释:    
+适用区域数值解释:    
 item_comment: 一般情况下使用此选项    
 sign_content: 文本来源为 告示牌 时使用此选项    
 check_long_numbers: 文本来源为 书与笔 时使用此选项    
-World, content: 文本来源为 世界频道 时使用此选项    
-HuaYuTing_content: 文本来源为 某网络游戏 时使用此选项
+World: 文本来源为 世界频道 时使用此选项    
+HuaYuTing: 文本来源为 某网络游戏 时使用此选项
 :::
 
 ---
