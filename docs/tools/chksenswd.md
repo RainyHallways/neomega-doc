@@ -15,12 +15,12 @@ level: 默认使用 0, 少部分表达式会使用此字段
 
 适用区域数值解释:    
 item_comment: 一般情况下使用此选项    
-sign_content: 文本来源为 告示牌 时使用此选项    
-check_long_numbers: 文本来源为 书与笔 时使用此选项    
-chatserver: 文本来源为聊天系统时使用此选项    
-ai_command_processor: 文本来源为AI指令时使用此选项    
-World: 文本来源为 世界频道 时使用此选项    
-HuaYuTing: 文本来源为 某网络游戏 时使用此选项
+sign_content: 文本来源为 >告示牌< 时使用此选项    
+check_long_numbers: 文本来源为 >书与笔< 时使用此选项    
+chatserver: 文本来源为 >聊天系统< 时使用此选项    
+ai_command_processor: 文本来源为 >AI指令< 时使用此选项    
+World: 文本来源为 >世界频道< 时使用此选项    
+HuaYuTing: 文本来源为 >某网络游戏< 时使用此选项
 :::
 
 ---
