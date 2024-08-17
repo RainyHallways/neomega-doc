@@ -31,7 +31,7 @@ export default {
     return {
       reviewData: {
         content: '',
-        channel: '',
+        channel: 'item_comment',
         level: '0'
       },
       channels: [
