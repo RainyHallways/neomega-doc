@@ -6,6 +6,10 @@
         <input type="text" id="content" v-model.trim="reviewData.content" required class="form-control">
       </div>
       <div class="form-group">
+        <label for="content" class="text">Level:</label>
+        <input type="text" id="level" v-model.trim="reviewData.level" required class="form-control">
+      </div>
+      <div class="form-group">
         <label for="channel" class="text">适用区域:</label>
         <select id="channel" v-model="reviewData.channel" required class="form-control">
           <option v-for="channel in channels" :key="channel" :value="channel">
@@ -34,6 +38,8 @@ export default {
         'item_comment',
         'sign_content',
         'check_long_numbers',
+        'chatserver',
+        'ai_command_processor',
         'World',
         'HuaYuTing'
       ],
