@@ -17,5 +17,4 @@ contributors: [RainyHallways,Rainyhws]
 [翼龙面板](https://pterodactyl-china.gitee.io/) 面板服务端    
 [Termux](https://github.com/termux/termux-app) 面向安卓系统的Linux终端模拟软件  
 [MarkovCraft](https://github.com/DevBobcorn/MarkovCraft) Minecraft建筑随机生成器    
-[XOR-MC-Archive-Decrypt](https://github.com/HTMonkeyG/XOR-MC-Archive-Decrypt) 我的世界中国版存档加解密工具    
 :::
